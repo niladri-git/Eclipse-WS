@@ -1,0 +1,25 @@
+<project>
+
+    <target name="clean">
+        <delete dir="target"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="target/classes"/>
+        <javac srcdir="src" destdir="target/classes" includeantruntime="false"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="target/jar"/>
+        <jar destfile="target/jar/AntWorld.jar" basedir="target/classes">
+            <manifest>
+                <attribute name="Main-Class" value="my.pkg.AntWorld"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="target/jar/AntWorld.jar" fork="true"/>
+    </target>
+
+</project>
