@@ -1,0 +1,5 @@
+$ mvn clean package
+
+$ java -cp target/HelloMaven-1.0-SNAPSHOT.jar my.pkg.HelloMaven 
+Hello Maven!!!
+
