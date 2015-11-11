@@ -1,0 +1,18 @@
+$ mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=org.sonatype.mavenbook.simpleweb -DartifactId=simple-webapp -Dpackage=org.sonatype.mavenbook -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
+
+$ cd simple-webapp/
+
+$ mvn jetty:run
+
+http://localhost:8080/simple-webapp/
+
+$ mkdir -p src/main/java/org/sonatype/mavenbook/web
+$ cd src/main/java/org/sonatype/mavenbook/web
+$ cat >SimpleServlet.java
+
+$  mvn clean install
+$  mvn jetty:run
+
+$ curl http://localhost:8080/simple-webapp/simple
+
+http://localhost:8080/simple-webapp/simple
