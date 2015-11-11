@@ -1,0 +1,21 @@
+$ pwd
+/home/niladri/Workspaces/Hello-Repo/HelloWorld/src
+
+$ tree
+.
+`-- my
+    `-- pkg
+        `-- HelloWorld.java
+
+$ javac my/pkg/HelloWorld.java 
+
+$ tree
+.
+`-- my
+    `-- pkg
+        |-- HelloWorld.class
+        `-- HelloWorld.java
+
+$ java my.pkg.HelloWorld 
+Hello World!!!
+
