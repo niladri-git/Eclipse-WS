@@ -1,0 +1,8 @@
+$ mvn archetype:generate -DgroupId=my.pkg -DartifactId=mvn-webapp-tomcat -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+$ mvn clean install
+
+$ mvn tomcat7:redeploy
+
+http://localhost:8080/mvn-webapp-tomcat/
+http://localhost:8080/mvn-webapp-tomcat/HelloWorld
