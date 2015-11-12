@@ -19,3 +19,36 @@ $ tree
 $ java my.pkg.HelloWorld 
 Hello World!!!
 
++++
+
+$ tree
+.
+|-- notes
+`-- src
+    `-- my
+        `-- pkg
+            |-- HelloWorld.class
+            `-- HelloWorld.java
+
+$ cd src/
+
+$ jar -cvf HelloWorld.jar my/pkg/HelloWorld.class 
+added manifest
+adding: my/pkg/HelloWorld.class(in = 435) (out= 296)(deflated 31%)
+niladri@ubuntu-pc:~/Workspaces/Hello-Repo/HelloWorld/src$ jar -tvf HelloWorld.jar 
+     0 Thu Nov 12 15:35:50 IST 2015 META-INF/
+    68 Thu Nov 12 15:35:50 IST 2015 META-INF/MANIFEST.MF
+   435 Thu Nov 12 15:32:08 IST 2015 my/pkg/HelloWorld.class
+
+$ java -cp HelloWorld.jar my.pkg.HelloWorld 
+Hello World!!!
+
+niladri@ubuntu-pc:~/Workspaces/Hello-Repo/HelloWorld/src$ tree
+.
+|-- HelloWorld.jar
+`-- my
+    `-- pkg
+        |-- HelloWorld.class
+        `-- HelloWorld.java
+
++++
