@@ -38,8 +38,8 @@ public class HelloMavenTest extends TestCase {
         assertTrue( true );
     }
 
-//    public void testWillAlwaysFail() {
-//        fail("An error message");
-//    }
+    public void testWillAlwaysFail() {
+        fail("An error message");
+    }
 
 }
