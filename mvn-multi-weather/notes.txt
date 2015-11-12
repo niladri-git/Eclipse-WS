@@ -1,0 +1,12 @@
+$ pwd
+/home/niladri/Workspaces/Hello-Repo/mvn-multi-weather
+
+$ mvn clean install
+
+$ /usr/local/tomcat/bin/startup.sh 
+
+$ pwd
+/home/niladri/Workspaces/Hello-Repo/mvn-multi-weather/simple-parent/simple-webapp
+
+$ mvn tomcat7:redeploy
+
