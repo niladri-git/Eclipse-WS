@@ -1,6 +1,6 @@
 package my.pkg;
 
-public class HelloAntTest extends junit.framework.TestCase {
+public class HelloAntTest2 extends junit.framework.TestCase {
 
     public void testNothing() {
     }
@@ -10,7 +10,7 @@ public class HelloAntTest extends junit.framework.TestCase {
     }
 
     public void testWillAlwaysFail() {
-        fail("An error message");
+        fail("Error message from HelloAntTest2.");
     }
     
 }
